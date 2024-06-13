@@ -10,16 +10,14 @@ import java.util.HashMap;
 @RestController
 public class LoginController {
 
-    private final HashMap<String, String> sessionMap = new HashMap<>();
-
     @GetMapping("/login")
     public String login(HttpSession session, @RequestParam String name) {
-        sessionMap.put(session.getId(), name);
+        session.setAttribute("name", name);
         return "saved";
     }
 
     @GetMapping("/myName")
     public String myName(HttpSession session) {
-        return sessionMap.get(session.getId());
+        return (String)session.getAttribute("name");
     }
 }
