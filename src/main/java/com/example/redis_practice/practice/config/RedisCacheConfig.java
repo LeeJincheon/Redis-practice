@@ -11,6 +11,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.Objects;
 
 @Configuration
 public class RedisCacheConfig {
@@ -26,7 +27,7 @@ public class RedisCacheConfig {
                 );
 
         HashMap<String, RedisCacheConfiguration> configMap = new HashMap<>();
-        configMap.put("userAgeCache", RedisCacheConfiguration.defaultCacheConfig())
+        Objects.requireNonNull(configMap.put("userAgeCache", RedisCacheConfiguration.defaultCacheConfig()))
                 .entryTtl(Duration.ofSeconds(5));
 
         return RedisCacheManager
