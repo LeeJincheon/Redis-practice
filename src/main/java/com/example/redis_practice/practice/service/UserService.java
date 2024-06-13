@@ -1,6 +1,6 @@
-package com.example.redis_practice.service;
+package com.example.redis_practice.practice.service;
 
-import com.example.redis_practice.dto.UserProfile;
+import com.example.redis_practice.practice.dto.UserProfile;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;

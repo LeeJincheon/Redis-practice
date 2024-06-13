@@ -1,4 +1,4 @@
-package com.example.redis_practice.dto;
+package com.example.redis_practice.practice.dto;
 
 import lombok.Builder;
 import lombok.Getter;

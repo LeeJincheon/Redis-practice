@@ -1,4 +1,4 @@
-package com.example.redis_practice.config;
+package com.example.redis_practice.practice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

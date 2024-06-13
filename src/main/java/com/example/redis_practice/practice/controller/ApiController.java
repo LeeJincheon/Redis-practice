@@ -1,7 +1,7 @@
-package com.example.redis_practice.controller;
+package com.example.redis_practice.practice.controller;
 
-import com.example.redis_practice.dto.UserProfile;
-import com.example.redis_practice.service.UserService;
+import com.example.redis_practice.practice.dto.UserProfile;
+import com.example.redis_practice.practice.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

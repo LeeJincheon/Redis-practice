@@ -1,4 +1,4 @@
-package com.example.redis_practice.controller;
+package com.example.redis_practice.practice.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.StringRedisTemplate;

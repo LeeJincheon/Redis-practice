@@ -1,4 +1,4 @@
-package com.example.redis_practice.controller;
+package com.example.redis_practice.practice.controller;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.GetMapping;
